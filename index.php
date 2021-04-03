@@ -3,7 +3,6 @@
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"calc_folder":false}';
 
 // CLIENT DOMAIN
-$domain = 'xww.danobat.com';
 //$domain = '52.164.213.214';
 
 //TFM version
@@ -23,9 +22,7 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => password_hash('lX605eSXSG12NY7oHG9b', PASSWORD_DEFAULT),
-    'danoblog' => password_hash('danoblog', PASSWORD_DEFAULT),
-    'operator101' => password_hash('DS123cvs', PASSWORD_DEFAULT)
+    '-' => password_hash('-', PASSWORD_DEFAULT)
 );
 
 //set application theme
@@ -35,7 +32,7 @@ $theme = 'light';
 // Readonly users
 // e.g. array('users', 'guest', ...)
 $readonly_users = array(
-//    'operator101'
+//    '-'
 );
 
 // Enable highlight.js (https://highlightjs.org/) on view's page
@@ -55,7 +52,6 @@ $default_timezone = 'Etc/UTC'; // UTC
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
 $root_path = $_SERVER['DOCUMENT_ROOT'];
-//$root_path = '/home/admin/filebrowser';
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
@@ -67,8 +63,8 @@ $http_host = $_SERVER['HTTP_HOST'];
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
 $directories_users = array(
-    'danoblog' => '/home/admin/filebrowser/wp-content',
-    'operator101' => '/home/admin/filebrowser/utilities'
+    '-' => '-',
+    '-' => '-'
 );
 
 // input encoding for iconv
